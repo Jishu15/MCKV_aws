@@ -1,0 +1,41 @@
+Problem Statement :  Deploy a project from GitHub to EC2
+
+Procedure:
+  
+Step 1:   Log in to AWS and create an EC2 Instance.
+
+Step 2 : 
+i) Open Bitwise SSH Client Application and 
+Paste the public IPv4 of the instance in the
+   Host field. 
+ii) Give Username as Ubuntu.
+iii) Click Client Key Manager, remove existing 
+Keys and import the new key.
+iv)Log in. in User Authentication.
+
+Step 3 : Open New terminal console.
+	   Enter and execute the following Commands.
+	Pwd
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install nginx
+	curl -SL https://deb.nodesource.com/setup_18.x | sudo -E bash 
+	sudo apt install nodejs
+	node -v
+	git clone https://github.com/moumita02314/myawsproject1
+
+
+         
+Step 4 : Enter in the directory “myawsproject1” and execute the following commands:
+	dir
+	cd Assign8-Repo2
+	ls
+	npm install
+	node index.js
+
+              
+Step 5 : 
+The index.js file in GitHub consists of port no “4000”. Go to the Security option of the instance -->Click the Security Group --> go to Edit inbound rules --> Click on Add rules --> set Type as ‘Custom TCP’ with Port range of ‘4000’ , Source as ‘Anywhere-IPv4’ and Save the rule.
+          
+
+Step 6 : Go to web browser and give the port number after the public IPv4. Press Enter.

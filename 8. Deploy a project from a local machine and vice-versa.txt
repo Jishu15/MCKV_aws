@@ -1,0 +1,132 @@
+Problem statement :   Deploy a project from local machine to GitHub and vice versa.
+
+Procedure : 
+Step 1 :  Login to your GitHub account and create a new repository & make it public. 
+         
+Step 2: After creating new repository, go to Settings →Developer Options →Personal Access Token →Token (Classic) →Generate new token (classic)
+
+Give a note name about new token and check all the boxes and set Expiration: 90 days and generate token.
+         
+Step 3: Go to your local machine and make sure git is installed. Next the following commands are the required for the initialize new git repository in your local machine and upload local repository into GitHub platform using git cli via https protocol with pre-generated token. 
+	- git init 
+	- git add . 
+	- git commit -m “<your massage here>” 
+	- git remote add <remote> https://<username>:<token>@github.com/<username>/<repo>.git 
+	- git push -u <remote> <branch> 
+From our local machine: To upload repository in GitHub  :
+
+Subarna@Subarna-Ideapad MINGW64 /d/IT-lab-assign-8$ ll
+total 0
+
+Subarna@Subarna-Ideapad MINGW64 /d/IT-lab-assign-8$ cat > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home : AWS</title>
+</head>
+<body>
+<div align="center">
+<h1>Home</h1>
+</div>
+<p align="center">
+<a href="./terms.html">Terms and Condition</a> |
+<a href="./about.html">About</a>
+</p>
+</body>
+</html>
+
+Subarna@Subarna-Ideapad MINGW64 /d/IT-lab-assign-8$ cat > about.html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>About : AWS</title>
+</head>
+<body>
+<div align="center">
+<h1>About</h1>
+</div>
+<p align="center">
+<a href="./index.html">Home</a> |
+<a href="./terms.html">Terms & Condition</a>
+</p>
+</body>
+</html>
+
+Subarna@Subarna-Ideapad MINGW64 /d/IT-lab-assign-8$ cat > terms.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Terms and Condition : AWS</title>
+</head>
+<body>
+<div align="center">
+<h1>Term and Condition</h1>
+</div>
+<p align="center">
+<a href="./index.html">Home</a> |
+<a href="./about.html">About</a>
+</p>
+</body>
+</html>
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8$ git config --get-regexp '^user\.(name|email)$'
+user.name SUBARNA-MANDAL
+user.email subarnamandal17@gmail.com
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8 (master)$ ls
+about.html  index.html  terms.html
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8$ git init
+Initialized empty Git repository in D:/IT-lab-assign-8/.git/
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8 (master)$ git add .
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8 (master)$ git commit -m "~By $ubarna"
+[master (root-commit) 4026f8d] ~By $ubarna
+ 3 files changed, 45 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 index.html
+ create mode 100644 terms.html
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8 (master)$ git remote add origin https://SUBARNA-MANDAL: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@github.com/SUBARNA-MANDAL/AWS-ass-8.git
+
+Dyuti@Dyuti-ASUS MINGW64 /d/IT-lab-assign-8 (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 708 bytes | 708.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/SUBARNA-MANDAL/AWS-ass-8.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+	After pushing the files into github ripo “AWS-ass-8” --
+                 
+
+From our local machine: To download public repository from GitHub  : 
+
+Dyuti@Dyuti-ASUS MINGW64 /d
+$ git clone https://github.com/sudip7407/Repo1.git
+Cloning into 'Repo1'... 
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (10/10), 49.46 KiB | 803.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+Dyuti@Dyuti-ASUS MINGW64 /d
+Dyuti@Dyuti-ASUS MINGW64 /d$ cd Repo1
+
+Dyuti@Dyuti-ASUS MINGW64 /d/Repo1 (main)$ ll
+total 183
+-rw-r--r-- 1 Dyuti 197609    115 Apr  6 02:40 'New Text Document.txt'
+-rw-r--r-- 1 Dyuti 197609    194 Apr  6 02:40  index.js
+-rw-r--r-- 1 Dyuti 197609 182693 Apr  6 02:40  package-lock.json
+-rw-r--r-- 1 Dyuti 197609    297 Apr  6 02:40  package.json

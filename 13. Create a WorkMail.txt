@@ -1,0 +1,25 @@
+Problem statement: Create a WorkMail for your organization.
+The step are as follows: -
+
+1.Navigate to the AWS console and locate the "Work Mail" service. Click on the first option that appears in the search results.
+
+2. Region Asia(Mumbai) is not supported. So chose N.Virginia as region. Then click on “Create organization”.
+
+3. Select the "Free test domain" option from the available email domains. Then, enter an organization name, such as "mckvie5."
+ 
+4. Once the organization is successfully created, click on the organization name.
+
+5. From the left pane, navigate to "Users" under the Organization category.
+
+6. Then proceed to click on “Add user”.
+
+7. Enter the username, first name, and last name in their respective fields. The display name will be generated automatically.
+8. Next, set a password for the WorkMail account according to the provided guidelines. Then proceed to click on “Add User”.  rayzer15
+
+9. After successfully adding the user, return to the organizations page, click on the organization
+name, and navigate to the “Amazon WorkMail web application” link to proceed.
+
+10. Now, enter the username and password to access WorkMail account.
+
+11. From this point, we can send an email to a Gmail account and verify whether it was received in our Gmail inbox to confirm that our WorkMail is functioning properly.
+

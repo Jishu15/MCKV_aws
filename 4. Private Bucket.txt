@@ -1,0 +1,33 @@
+Statement :  Create a private bucket in AWS. Upload a file and check by reassigned URL whether you can access the file or not.
+Steps--- 
+1. First sign in to your AWS account and search for “S3” (Simple Storage Services - where we will create the Bucket ) in the search bar
+
+2. Now click on “Create Bucket” option
+   
+3. Now set the configuration of the bucket -
+i.	Bucket name
+ii.	AWS Region
+iii.   Object Ownership information (ACLs disabled)
+ iv.   Check all public access block
+		After filling click on “Create Bucket” option
+
+4. You can see the bucket is successfully created. Next click on the <Bucket name>.
+
+5. Click on the “Upload” option.
+
+6. Click “Add files” and upload a file.
+
+7. File is uploaded. Now click on the  <uploaded file name >
+
+8. Copy the object URL from this.
+
+9. Open the URL in another browser. It will show access denied.
+
+10.Now click on “Object actions” and select “Share with a presigned URL” option.
+
+11.	Now set the number of minutes (here 1 minutes) and click on “Create presigned URL”.
+A presigned URL will be ready to be copied.
+
+12.	Next copy the Presigned URL and paste it on an another browser. The file will be visible for the given time.
+
+

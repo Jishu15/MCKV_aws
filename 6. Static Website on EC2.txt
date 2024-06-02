@@ -1,0 +1,29 @@
+Problem Statement:   Upload a static website on S3.
+
+Procedure: 
+Step 1:Sign in to your AWS account as root user, search “S3” on the search bar and click on it.
+ 
+Step 2: Then create a public “S3” bucket. (Refer to Assignment 5 for full procedure)
+ 
+Step 3: Now create three html files inside a folder.
+a. The first one is named index.html 
+ b. The second one is named About.html 
+ c. The third one is named contact.html
+ 
+ 
+Step 4: Now let us go back to AWS. Click the newly created public bucket. Click on the <bucket name>.  
+Step 5: Next click on the add files button. Select all the three html files .Next click on the “Permission” at the bottom of the page  and click on it.         	 
+Step 6 : Now give check on “Grant public-read access” and upload the .html files , so that files are visible to anyone.  
+ 
+Step 7: After arriving in the properties tab, Scroll down all the way to the bottom. We will focus only on the Static website hosting section. By default, it will show Disabled. We must Enable it. In order to do so click on the Edit button on the right-hand side of the section. 
+           
+Step 8: we will choose the enable option. After choosing it multiple options will appear.
+                            
+Step 9: Now we must mention the html document name. This is the one which anyone can access using the bucket link. Scroll down and click on save changes button.
+          	   
+Step 10: Now, you will again arrive in the bucket’s properties tab. Scroll down to the static website hosting area. Now you can see a link has arrived.
+ 
+Step 11:  Copy link and open it in a browser.
+A)Index page
+B)About page  	
+C)Contact page

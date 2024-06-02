@@ -1,0 +1,32 @@
+Statement:  Create a public bucket in AWS. Upload a file and give the necessary permissions to check the file URL is working or not.(Public access) and check on “I understand” check box.
+
+Steps--- 
+1. First sign in to your AWS account and search for “S3” (Simple Storage Services - where we will create the Bucket) in the search bar.
+          
+2. Now click in “Create Bucket” option.
+
+3. Now give the bucket name and click on  ACL’s  Enable.        
+
+4. Uncheck block all public access.
+
+5. Check on Acknowledgement and click on create bucket.
+
+6. You can see the bucket is successfully created. Next click on the <Bucket name>.
+		
+7.Click on the “Upload” option.
+
+8. Click “Add files” and upload a file.
+
+9.File is uploaded. Now click on the  <uploaded file name >
+
+10.Copy the object URL from this .
+
+11.Open the URL in another browser. It will show access denied.
+
+12.Now click on “Permission” and click on “edit”.
+                        
+13.Now check two check boxes under Everyone (Public access) and check on I understand check box
+
+14.Click on save changes.
+
+15.Next copy the URL and paste it on an another browser.The file will be visible for the given time.

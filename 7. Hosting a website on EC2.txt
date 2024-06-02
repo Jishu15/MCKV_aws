@@ -1,0 +1,22 @@
+Problem Statement:  Host a website on EC2 service of AWS.
+
+Initializing an EC2 instance : 
+
+Step 1: Login to the AWS console, and search for ec2. Open the first EC2 link. We are directed to a page, where we can view details of all the instances we create, or are running.
+                    
+
+Step 2: Click on the Launch Instance button. A dropdown appears, from which select Launch Instance. 
+
+Step 3: On the new window that opens, set a name for the instance, and select the Ubuntu platform. 
+
+Step 5: The new popup appears, where we enter the name of the key pair, and leave all other options default (RSA security option, and the ‘.pem’ extension).Then click on the Create key pair button. Save the file in some directory on your computer.
+                                                      
+Step6: Then check all the checkboxes, in the firewall settings. 
+
+Then click on Launch instance. A success message is shown on a new window. Click on View all instances. After this, a window showing all instances is open.
+                                            
+Step 7: Now click on the Instance ID (hidden in the image, but it is actually visible on the website). Copy the public IPv4 address as visible from the new interface that opens.	            			       
+                
+Step 8: Now, our ec2 service is ready to work with.
+                                                                   
+

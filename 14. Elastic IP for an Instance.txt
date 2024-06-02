@@ -1,0 +1,36 @@
+Problem Statement: Create an Elastic IP for an instance.
+
+The steps are as follows:
+
+1.	Open the AWS console, search EC2, and select the first option listed.
+
+2.	Select the "Launch Instance" button.
+
+3.	Enter a suitable name for your instance. For instance, we have named it "SouvikEC2” .Then Select Ubuntu from the list of available AMIs.
+ 
+4.	Select the checkboxes for SSH, HTTP, and HTTPS protocols. Proceed to click on “Launch Instance”
+
+5.	The instance has been created successfully.
+
+6.	To view the public IPv4 address, click on the instance ID.
+
+7.	Select the instance, go to "Instance State," and choose to stop the instance.
+
+8.	Once the instance is stopped, proceed to start the instance again.
+
+9.	After restarting the instance, you will notice that the IPv4 address has changed
+
+10.	Next, we will associate this instance with an Elastic IP.
+
+11.	Select “Allocate Elastic IP Address” button.
+
+12.	The subsequent window appears. Keep all thing same and proceed to click on “Allocate”.
+
+13.	Now proceed to click on “Associate Elastic IP Address”.
+
+14.	Choose the instance, its private IP address, and tick the checkbox below. Then, proceed to click on "Associate."
+
+15.	After stopping and then restarting the instance, you will observe that the IPv4 address remains unchanged.
+
+
+

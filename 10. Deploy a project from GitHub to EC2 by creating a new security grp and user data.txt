@@ -1,0 +1,16 @@
+Problem Statement :- 
+Deploy a project from GitHub to EC2 by creating new Security Group and user data.
+
+Step 1 :-  Login to the AWS console, and search for EC2. Open the first EC2 link. 
+
+Step 2 :-  Go to “Security Groups”. Then click on “Create Security group” to create custom security group. 
+
+Step 3 :- Now provide security group name ,description and Set Inbound rules types HTTP, HTTPS, SSH and Custom TCP Port Range 4000. Click on  the “Create security group”. 
+
+Step 4 :-  Create EC2 ubuntu instance. In network settings, select existing security group and choose the group created. 
+	
+Step 5 :- In advanced details, enter user data in the blank space and click “Launch instance”. 
+
+Step 6:- Created instance shown below. 
+
+Step 7:-  Now copy the public IPv4 address with custom port number 4000 and run it in any web browser.

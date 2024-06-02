@@ -1,0 +1,39 @@
+Create scaling plans in AWS using Autoscaling groups and EC2 Instances
+
+
+Step 1    Search EC2 in the Console search box, click on Dashboard
+ 
+Step 2    Scroll down to the end of the left pane of the EC2 Dashboard, and click on Autoscaling Groups
+
+Step 3    Create a new Autoscaling Group
+
+Step 4    Provide a name, and include an existing Template
+
+Step 5    Click on Next
+
+Step 6    For launch options, select existing template and choose all available network regions, and click Next
+
+Step 7    Configure advanced options as shown
+
+Step 8    Configure group size and scaling, especially capacity
+
+Step 9    Skip notifications and tags
+
+Step 10    Review the autoscaling group settings
+
+Step 11    Finally, create the Autoscaling Group after reviewing all settings
+ 
+Step 12    In the Instances dashboard, click on the newly created instances, wait until they show “Running” as status
+
+Step 13    Click on one of the instances, and click on Connect
+
+Step 14    Set username as ubuntu in ‘Connect to Instance’ info, and click on Next
+
+Step 15    A shell appears for accessing the ubuntu instance
+ 
+Step 16    Create a temp.sh, write a basic loop program to make the instance keep processing the program, run the sh
+ 
+Step 17    Run the sh
+
+Step 16    Go back to the Instance dashboard and click the 2 new instances again. The workloads will vary, as shown in CPU utilization graph
+

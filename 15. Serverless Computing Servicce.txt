@@ -1,0 +1,26 @@
+Problem Statement: Create a serverless computing service.
+
+The steps are as follows:
+
+1.	Please access the AWS console and use the search bar to look for "Lambda". Then, select the first option that appears in the search 	results.
+
+2.	To proceed click on “Create a function”.
+
+3.	Please specify an appropriate function name, as "function10" is currently being used. Without making any changes, proceed to click on 	"Create function" located at the bottom.
+
+4.	The function named "function10" has been successfully created.
+
+5.	Next, scroll down to access the code section. Make the necessary modifications to the code, and then proceed to deploy it in order to 	save the changes.
+
+6.	Navigate to the Test section, where you'll create an event. Give the event a name (for instance, "event11") and then select "Test" to 	proceed.
+ 
+7.	Access the configuration settings, and from the left panel, choose "Function URL." Proceed by selecting "Create function URL."
+
+8.	Choose “None” in the author type.
+
+9.	Proceed to click on “Save” button.
+
+10.	Copy the function URL that has been generated in the right pane.
+
+11.	The subsequent window shows the output of the modified code.
+
