@@ -1,0 +1,58 @@
+Problem Statement: Deploy and run project in AWS without using port.
+
+Step - 1: Login to AWS, search for EC2 then click security groups to create new security group. 
+
+Step - 2 : Now provide security group name , Inbound rules SSH, HTTP,  HTTPS and Custom TCP with port range 4000. Then create group.
+ 
+Step - 3: Go to EC2 dashboard and click on Launch Instance. 
+
+Step - 4 : After it give a unique name and then click on Ubuntu. 
+
+Step - 5 : Now select key pair and in network settings also click on “Select existing security group” then select the security group which was created and click on Launch Instance. 	
+ 
+Step - 6: Click on instance and copy public IPv4 address. 
+
+Step - 7 : Paste the IPv4 address in host of 
+BitVise SSH client and import key pair in Client
+ key pair manager. After that click on Log In. 
+
+Step - 8 : Now open terminal in BitVise SSH and then write all commands : 
+• Pwd 
+• sudo apt-get update 
+• sudo apt-get upgrade 
+• sudo apt-get install nginx 
+• curl -SL https://deb.nodesource.com/setup_16.x|sudo -E bash - 
+
+• Sudo apt install nodejs
+• git clone https://github.com/SUBARNA-MANDAL/aws10.git 
+• cd repo2 
+• npm install 
+• node index.js 
+
+Step - 9 :Now server has started. If we paste it with port 4000 in url section then we can see nginx has started. To stop server click (ctrl+c). 
+
+Step - 10 :Now write these all commands: 
+• cd / 
+• pwd 
+cd etc/nginx/sites-available/ 
+• sudo nano default 
+
+Step - 11 :   
+A new window will be opened. There at first go to location area and comment all codes and the write: 
+• location/{ 
+proxy_pass http://localhost:4000; 
+proxy_http_version 1.1; 
+proxy_set_header Upgrade $http_upgrade;  	
+proxy_set_header Connection ‘upgrade’; 
+proxy_set_header Host $host; 
+proxy_cache_bypass $http_upgrade; 
+} 
+->After it click Ctrl+X, then y then click enter 
+
+Step - 12 :   Now open new server terminal and write the commands 
+• cd repo2 
+• sudo systemctl restart nginx. 
+
+Step - 13 :
+Now copy that public IPv4 address again and paste it in url and there
+ we can see that without giving port  4000 with url we have hosted the website. 
